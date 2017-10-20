@@ -19,15 +19,15 @@ const rootValue = {
   },
 };
 
-const app = express();
-
-const options = {
+// Config
+const graphqlConfig = {
   schema,
   rootValue,
   graphiql: true,
 };
 
+const app = express();
 
-app.use('/', graphqlHTTP(options))
+app.use('/', graphqlHTTP(graphqlConfig));
 
-app.listen(3000, () => console.log('Listening on port 3000.'))
+app.listen(3000, () => console.log('Listening on port 3000.'));
