@@ -27,7 +27,7 @@ Open up `localhost:3000` in your browser and try out the following queries:
       "Red Pepper",
       "Garlic",
       "Olives"
-  	],
+    ],
   	num: 5
   )
 }
