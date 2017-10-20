@@ -12,4 +12,4 @@ yarn install
 
 A very simple server example using [express](https://github.com/expressjs/express), [express-graphql](https://github.com/graphql/express-graphql) and [graphql](https://github.com/graphql/graphql-js).
 
-See own README for more information.
+[More information](https://github.com/engvik/graphql-node-examples/blob/master/simple-express-graphql/README.md)
