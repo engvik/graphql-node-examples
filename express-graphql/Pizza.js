@@ -37,37 +37,37 @@ export default class Pizza {
 
 const pizzaResolver = {
   getPizza: ({ id }) => {
-      if (!pizzaDB[id]) {
-        throw new Error('No topping with id: ' + id);
-      }
-
-      return pizzaDB[id];
-    },
-    createPizza: ({ input }) => {
-      const id = createId();
-  
-      pizzaDB[id] = new Pizza(id, input);
-
-      return pizzaDB[id];
-    },
-    updatePizza: ({ id, input }) => {
-      if (!pizzaDB[id]) {
-        throw new Error('No topping with id: ' + id);
-      }
-  
-      pizzaDB[id].updatePizza(input);
-  
-      return pizzaDB[id];
-    },
-    deletePizza: ({ id }) => {
-      if (!pizzaDB[id]) {
-        throw new Error('No topping with id: ' + id);
-      }
-  
-      delete pizzaDB[id];
-  
-      return true;
+    if (!pizzaDB[id]) {
+      throw new Error('No topping with id: ' + id);
     }
+
+    return pizzaDB[id];
+  },
+  createPizza: ({ input }) => {
+    const id = createId();
+
+    pizzaDB[id] = new Pizza(id, input);
+
+    return pizzaDB[id];
+  },
+  updatePizza: ({ id, input }) => {
+    if (!pizzaDB[id]) {
+      throw new Error('No topping with id: ' + id);
+    }
+
+    pizzaDB[id].updatePizza(input);
+
+    return pizzaDB[id];
+  },
+  deletePizza: ({ id }) => {
+    if (!pizzaDB[id]) {
+      throw new Error('No topping with id: ' + id);
+    }
+
+    delete pizzaDB[id];
+
+    return true;
+  }
 };
 
 export { pizzaResolver, pizzaDB };
