@@ -11,7 +11,7 @@ const schema = buildSchema(`
 `);
 
 // Resolver
-const rootValue = {
+const root = {
   name: () => 'Pizza',
   toppings: () => ['Cheese', 'Pepperoni', 'Onion', 'Mushrooms', 'Jalapenos', 'Red Pepper', 'Garlic', 'Olives'],
   getRandomToppings: ({ toppings, num }) => {
@@ -22,7 +22,7 @@ const rootValue = {
 // Config
 const graphqlConfig = {
   schema,
-  rootValue,
+  rootValue: root,
   graphiql: true,
 };
 

@@ -2,4 +2,5 @@ require('babel-register')({
   presets: ['env'],
 });
 
-require('./simple-express-graphql/server');
+
+require('./express-graphql/server');
