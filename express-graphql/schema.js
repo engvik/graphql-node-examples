@@ -28,8 +28,6 @@ const schema = buildSchema(`
   type Query {
     getPizza(id: ID!): Pizza
     getTopping(id: ID!): Topping
-    randomPizzas(num: Int): [Pizza]
-    randomToppings(num: Int): [Topping]
   }
 
   type Mutation {

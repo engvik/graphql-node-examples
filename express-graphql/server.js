@@ -6,7 +6,6 @@ import { Topping, toppingResolver } from './Topping';
 
 import schema from './schema';
 
-
 // Resolver
 const root = Object.assign({}, pizzaResolver, toppingResolver);
 
