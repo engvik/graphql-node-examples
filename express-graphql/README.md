@@ -3,7 +3,7 @@ Example server with CRUD operations using [express](https://github.com/expressjs
 
 ## Run
 
-`node express-graphql-server`
+`node express-graphql`
 
 ## Usage
 
