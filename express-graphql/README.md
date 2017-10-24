@@ -1,5 +1,17 @@
 # express-graphql
-Example server with CRUD operations using [express](https://github.com/expressjs/express), [express-graphql](https://github.com/graphql/express-graphql) and [graphql](https://github.com/graphql/graphql-js).
+Example server with CRUD operations using Facebook's JavaScript reference implementation.
+
+## Dependencies
+
+* [express](https://github.com/expressjs/express)
+* [express-graphql](https://github.com/graphql/express-graphql)
+* [graphql](https://github.com/graphql/graphql-js)
+
+## Resources
+
+* [Getting Started With GraphQL.js](http://graphql.org/graphql-js/)
+* [graphql API Reference](http://graphql.org/graphql-js/graphql/)
+* [express-graphql API Reference](http://graphql.org/graphql-js/express-graphql/)
 
 ## Run
 
