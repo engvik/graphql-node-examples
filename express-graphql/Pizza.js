@@ -5,6 +5,7 @@ import createId from './create-id';
 // Database mock
 const pizzaDB = {};
 
+// Pizza class
 export default class Pizza {
   constructor(id, { name, toppings }) {
     this.id = id;
@@ -35,10 +36,11 @@ export default class Pizza {
   }
 }
 
+// Resolver
 const pizzaResolver = {
   getPizza: ({ id }) => {
     if (!pizzaDB[id]) {
-      throw new Error('No topping with id: ' + id);
+      throw new Error('No pizza with id: ' + id);
     }
 
     return pizzaDB[id];
@@ -52,7 +54,7 @@ const pizzaResolver = {
   },
   updatePizza: ({ id, input }) => {
     if (!pizzaDB[id]) {
-      throw new Error('No topping with id: ' + id);
+      throw new Error('No pizza with id: ' + id);
     }
 
     pizzaDB[id].updatePizza(input);
@@ -61,7 +63,7 @@ const pizzaResolver = {
   },
   deletePizza: ({ id }) => {
     if (!pizzaDB[id]) {
-      throw new Error('No topping with id: ' + id);
+      throw new Error('No pizza with id: ' + id);
     }
 
     delete pizzaDB[id];

@@ -1,5 +1,5 @@
-# express-graphql
-Example server with CRUD operations using [express](https://github.com/expressjs/express), [express-graphql](https://github.com/graphql/express-graphql) and [graphql](https://github.com/graphql/graphql-js).
+# express-graphql-tools
+Example server with CRUD operations using [express](https://github.com/expressjs/express), [express-graphql](https://github.com/graphql/express-graphql), [graphql-tools](https://www.npmjs.com/package/graphql-tools) and [graphql](https://github.com/graphql/graphql-js).
 
 ## Run
 

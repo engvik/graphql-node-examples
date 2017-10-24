@@ -3,7 +3,7 @@ import createId from './create-id';
 // Database mock
 const toppingDB = {};
 
-// Topping
+// Topping class
 export default class Topping {
   constructor(id, { name }) {
     this.id = id;

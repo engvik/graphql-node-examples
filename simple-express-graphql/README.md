@@ -3,7 +3,7 @@ A very simple server example using [express](https://github.com/expressjs/expres
 
 ## Run
 
-`node simple-express-graphql-server`
+`node simple-express-graphql`
 
 ## Usage
 
