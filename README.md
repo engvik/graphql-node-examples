@@ -17,20 +17,24 @@ git clone https://github.com/engvik/graphql-node-examples.git
 yarn install
 ```
 
+## Run
+
+See each independent example.
+
 ## simple-express-graphql
 
-A very simple server example using [express](https://github.com/expressjs/express), [express-graphql](https://github.com/graphql/express-graphql) and [graphql](https://github.com/graphql/graphql-js).
+A very simple server example using Facebook's JavaScript reference implementation.
 
 [Details](https://github.com/engvik/graphql-node-examples/blob/master/simple-express-graphql/README.md)
 
 ## express-graphql
 
-Example server with CRUD operations using [express](https://github.com/expressjs/express), [express-graphql](https://github.com/graphql/express-graphql) and [graphql](https://github.com/graphql/graphql-js).
+Example server with CRUD operations using Facebook's JavaScript reference implementation.
 
 [Details](https://github.com/engvik/graphql-node-examples/blob/master/express-graphql/README.md)
 
 ## express-graphql-tools
 
-Example server with CRUD operations using [express](https://github.com/expressjs/express), [express-graphql](https://github.com/graphql/express-graphql), [graphql-tools](https://www.npmjs.com/package/graphql-tools) and [graphql](https://github.com/graphql/graphql-js).
+The same example as above, but with Apollo's `graphql-tools`.
 
 [Details](https://github.com/engvik/graphql-node-examples/blob/master/express-graphql-tools/README.md)
