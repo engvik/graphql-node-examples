@@ -13,7 +13,7 @@ Example server with CRUD operations using Facebook's JavaScript reference implem
 * [Getting Started With GraphQL.js](http://graphql.org/graphql-js/)
 * [graphql API Reference](http://graphql.org/graphql-js/graphql/)
 * [express-graphql API Reference](http://graphql.org/graphql-js/express-graphql/)
-* [Apollo's graphql-tools documentation](http://dev.apollodata.com/tools/graphql-tools/)
+* [graphql-tools documentation](http://dev.apollodata.com/tools/graphql-tools/)
 
 ## Run
 

@@ -11,7 +11,7 @@ import typeDefs from './type-defs';
 // Resolvers
 const resolvers = merge(pizzaResolver, toppingResolver);
 
-// Config
+// Schema
 const schema = makeExecutableSchema({
   typeDefs,
   resolvers,
