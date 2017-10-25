@@ -38,3 +38,9 @@ Example server with CRUD operations using Facebook's JavaScript reference implem
 The same example as above, but with Apollo's `graphql-tools`.
 
 [Details](https://github.com/engvik/graphql-node-examples/blob/master/express-graphql-tools/README.md)
+
+## apollo-server
+
+Example server with CRUD operations using Facebook's JavaScript reference implementation and Apollo's `apollo-server-express` and `graphql-tools`.
+
+[Details](https://github.com/engvik/graphql-node-examples/blob/master/apollo-server/README.md)
