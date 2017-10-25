@@ -6,7 +6,7 @@ import { makeExecutableSchema } from 'graphql-tools';
 import { Pizza, pizzaResolver } from './Pizza';
 import { Topping, toppingResolver } from './Topping';
 
-import typeDefs from './schema';
+import typeDefs from './type-defs';
 
 // Resolvers
 const resolvers = merge(pizzaResolver, toppingResolver);

@@ -1,5 +1,12 @@
+const foodTypeDefs = `
+  interface Food {
+    id: ID!
+    name: String
+  }
+`;
+
 const pizzaTypeDefs = `
-  type Pizza {
+  type Pizza implements Food {
     id: ID!
     name: String
     toppings(id: [ID!]): [Topping]
@@ -7,7 +14,7 @@ const pizzaTypeDefs = `
 `;
 
 const toppingTypeDefs = `
-  type Topping {
+  type Topping implements Food {
     id: ID!
     name: String
   }
@@ -42,4 +49,4 @@ const rootTypeDefs = `
   }
 `;
 
-export default [rootTypeDefs, pizzaTypeDefs, toppingTypeDefs];
+export default [rootTypeDefs, foodTypeDefs, pizzaTypeDefs, toppingTypeDefs];
