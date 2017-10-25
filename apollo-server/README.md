@@ -2,11 +2,11 @@
 Example server with CRUD operations using Facebook's JavaScript reference implementation and Apollo's `apollo-server-express` and `graphql-tools`.
 
 > The following features distinguish Apollo Server from express-graphql, Facebook’s reference HTTP server implementation:
-
-    Apollo Server has a simpler interface and allows fewer ways of sending queries, which makes it a bit easier to reason about what’s going on.
-    Apollo Server serves GraphiQL on a separate route, giving you more flexibility to decide when and how to serve it.
-    Apollo Server supports query batching which can help reduce load on your server.
-    Apollo Server has built-in support for persisted queries, which can make your app faster and your server more secure.
+>
+> *    Apollo Server has a simpler interface and allows fewer ways of sending queries, which makes it a bit easier to reason about what’s going on.
+> *    Apollo Server serves GraphiQL on a separate route, giving you more flexibility to decide when and how to serve it.
+> *    Apollo Server supports query batching which can help reduce load on your server.
+> *    Apollo Server has built-in support for persisted queries, which can make your app faster and your server more secure.
 
 
 ## Dependencies
