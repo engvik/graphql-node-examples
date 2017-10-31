@@ -1,4 +1,4 @@
-# apollo-server-simple
+# apollo-server
  Implementing the [express-graphql-tools](https://github.com/engvik/graphql-node-examples/tree/master/express-graphql-tools) exampling using Apollo's `apollo-server-express`.
 
 > The following features distinguish Apollo Server from express-graphql, Facebook’s reference HTTP server implementation:
@@ -21,7 +21,7 @@
 
 ## Run
 
-`node apollo-server-simple`
+`node apollo-server`
 
 ## Usage
 
