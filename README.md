@@ -41,6 +41,6 @@ The same example as above, but with Apollo's `graphql-tools`.
 
 ## apollo-server
 
-Implementing the [express-graphql-tools](https://github.com/engvik/graphql-node-examples/tree/master/express-graphql-tools) exampling using Apollo's `apollo-server-express`.
+Implementing the [express-graphql-tools](https://github.com/engvik/graphql-node-examples/tree/master/express-graphql-tools) example using Apollo's `apollo-server-express`.
 
 [Details](https://github.com/engvik/graphql-node-examples/blob/master/apollo-server/README.md)
