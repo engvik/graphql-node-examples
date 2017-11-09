@@ -58,22 +58,3 @@ runMutation({ mutation: createTopping("Mushoms") })
     return runMutation({ mutation: createTopping("Mushoms") })
   })
   .catch(console.log);
-
-// Run mutations and queries.
-/* client
-  .mutate()
-  .then((res) => {
-    const topping = res.data.createTopping.name;
-    const id = res.data.createTopping.id;
-
-    console.log(`New topping: ${topping}, id: ${id}`);
-
-    client
-      .mutate({ mutation: updateTopping(id, "Mushrooms")})
-      .then((res) => {
-        const topping = res.data.updateTopping.name;
-        const id = res.data.updateTopping.id;
-    
-        console.log(`Updated topping: ${topping}, id: ${id}`);
-      });
-  }); */
