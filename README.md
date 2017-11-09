@@ -21,26 +21,36 @@ yarn install
 
 See each independent example.
 
-## simple-express-graphql
+## Server examples
+
+### simple-express-graphql
 
 A very simple server example using Facebook's JavaScript reference implementation.
 
 [Details](https://github.com/engvik/graphql-node-examples/blob/master/simple-express-graphql/README.md)
 
-## express-graphql
+### express-graphql
 
 Example server with CRUD operations using Facebook's JavaScript reference implementation.
 
 [Details](https://github.com/engvik/graphql-node-examples/blob/master/express-graphql/README.md)
 
-## express-graphql-tools
+### express-graphql-tools
 
 The same example as above, but with Apollo's `graphql-tools`.
 
 [Details](https://github.com/engvik/graphql-node-examples/blob/master/express-graphql-tools/README.md)
 
-## apollo-server
+### apollo-server
 
 Implementing the [express-graphql-tools](https://github.com/engvik/graphql-node-examples/tree/master/express-graphql-tools) example using Apollo's `apollo-server-express`.
 
 [Details](https://github.com/engvik/graphql-node-examples/blob/master/apollo-server/README.md)
+
+## Client examples
+
+### apollo-client-simple
+
+Implementing a simple client with inmemory cache that works against the [apollo-server implementation](https://github.com/engvik/graphql-node-examples/tree/master/apollo-server).
+
+[Details](https://github.com/engvik/graphql-node-examples/blob/master/apollo-client-simple/README.md)
