@@ -27,14 +27,21 @@ function updateTopping(id, name) {
 }
 
 function createPizza(name, toppings) {
+  let stringToppings = '';
+
+  toppings.forEach((topping) => stringToppings += `{ id: "${topping}" }`)
+
   return gql`
     mutation {
       createPizza(
         input: {
-          name: "Mushroom pizza"
-          toppings: 
+          name: "${name}"
+          toppings: [
+            ${stringToppings}
+          ]
         }) {
         id
+        name
         toppings {
           name
         }
@@ -47,5 +54,4 @@ export {
   createTopping,
   updateTopping,
   createPizza,
-
 };

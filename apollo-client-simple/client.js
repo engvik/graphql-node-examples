@@ -7,6 +7,7 @@ import { InMemoryCache } from 'apollo-cache-inmemory';
 import {
   createTopping,
   updateTopping,
+  createPizza,
 } from './queries';
 
 // Set up client
@@ -38,8 +39,8 @@ function runMutation(mutation) {
 // Let's create a pizza!
 runMutation({ mutation: createTopping("Mushoms") })
   .then((res) => {
-    const topping = res.data.createTopping.name;
     const id = res.data.createTopping.id;
+    const topping = res.data.createTopping.name;
 
     console.log(`New topping: ${topping}, id: ${id}`);
 
@@ -47,14 +48,26 @@ runMutation({ mutation: createTopping("Mushoms") })
   })
   .then(runMutation)
   .then((res) => {
-    const topping = res.data.updateTopping.name;
     const id = res.data.updateTopping.id;
+    const topping = res.data.updateTopping.name;
 
     console.log(`Updated topping: ${topping}, id: ${id}`);
 
     return id;
   })
   .then((mushroomId) => {
-    return runMutation({ mutation: createTopping("Mushoms") })
+    return runMutation({ mutation: createPizza("Mushroom pizza", [mushroomId]) });
+  })
+  .then((res) => {
+    const id = res.data.createPizza.id;
+    const pizza = res.data.createPizza.name;
+    const toppings = res.data.createPizza.toppings;
+
+    console.log(`Created pizza: ${pizza}, id: ${id}`);
+    console.log(`Has toppings:`);
+
+    toppings.forEach((topping) => {
+      console.log(`  - ${topping.name}`);
+    });
   })
   .catch(console.log);
